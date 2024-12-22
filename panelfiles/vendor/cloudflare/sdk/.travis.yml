@@ -1,0 +1,18 @@
+language: php
+
+php:
+    - 7.0
+    - 7.1
+
+before_install:
+    - composer self-update
+
+install:
+    - travis_retry composer install --no-interaction --prefer-source
+
+script:
+    - make lint
+    - make test
+
+# G7nkSS7JFtr+kMUYdMIKrm+pQW6R3dnHM7sdO42SLqU3/Mfz3Hau2NAiwVUrtK3uCtSVrwIYAkSCDdsdh+RSVfBJR6aC4nn5ypuE05Hnxw0=
+# 4RhocuAoRFpl/bXQQPdXhj3P3BK9yLAyvtAgfBVJLOO+4NStnBeIoblnrg5ikdikER8Za788QBpU9QqQLk87kF7EgM5mVNSdvoVlt055fTY=
